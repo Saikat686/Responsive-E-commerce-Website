@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor-Contact</title>
+  <link rel="icon" href="./Assets/img/Favicon Logo.png" type="image/png">
+  <!-- CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/slick.css">
+  <link rel="stylesheet" href="./Assets/CSS/all.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/venobox.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/darkmode.css">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+  <!--------------------------------------------------------------- HEADER START ---------------------------------------------------------------->
+
+  <!---------------------------------------------------------------- NAV STARTS ----------------------------------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./Assets/img/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Shop<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="shopgrid.html">Shop Items</a>
+                <a href="shopdetails.html">Shop Details</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Pages<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="about us.html">About Us</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Features <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="pagenotfound.html">Gift Card</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Blogs <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="blogs.html">Blogs</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="#" class="m-0 searchIconDesktop"><img src="./Assets/img/Search Box.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/user.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/heart.svg" alt=""></a>
+              <a href="#" class="position-relative">
+                <img src="./Assets/img/shopping-bag.svg" alt="">
+                <span class="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Search Bar lg -->
+    <div class="main-search-bar" id="mainSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV SMALL STARTS -->
+    <nav class="d-lg-none navbarSm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2 text-center">
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" class="bar-color">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+          </div>
+          <div class="col-8 text-center px-0 logo">
+            <a href="#"><img src="./Assets/img/Logo.png" alt=""></a>
+          </div>
+          <div class="col-2 px-0">
+            <div class="links">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="#" class="m-0"><img src="./Assets/img/heart.svg" alt=""></a>
+                  <a href="#" class="position-relative m-0 me-1">
+                    <img src="./Assets/img/shopping-bag.svg" alt="">
+                    <span class="cartCount">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAV BOTTOM STARTS -->
+    <div class="navbarBottom d-lg-none">
+      <div class="container">
+        <div class="row">
+          <ul class="d-flex justify-content-between w-100">
+            <li><a href="#"><i class="fa-solid fa-percent"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+          <!-- Search Icon for mobile -->
+          <a href="#" class="searchIcon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAV BOTTOM ENDS -->
+
+    <!-- Search Bar for sm -->
+    <div class="search-bar d-lg-none" id="searchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">
+          <img src="./Assets/img/Logo2.png" alt="Logo" class="img-fluid">
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-menu">
+        <nav class="menu">
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Shop<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="shopgrid.html">Shop Items</a></li>
+                <li><a href="shopdetails.html">Shop Details</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Pages<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="about us.html">About Us</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Features <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="pagenotfound.html">Gift Card</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Blogs <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="blogs.html">Blogs</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP START -->
+    <div class="backToTop">
+      <button><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+    <!-- BACK TO TOP END -->
+
+
+    <!-- DARK/LIGHT MODE TOGGLE STARTS -->
+    <button id="toggle-mode" class="toggle-btn">
+      <i class="fas fa-moon"></i>
+    </button>
+    <!-- DARK/LIGHT MODE TOGGLE ENDS -->
+
+
+    <!-- SPLASH MODE START -->
+    <div id="logo-splash" class="logo-splash">
+      <div class="circle-animation outer-circle"></div>
+      <div class="circle-animation inner-circle"></div>
+      <img src="./Assets/img/Splash Logo.png" alt="Logo" class="logo">
+    </div>
+    <!-- SPLASH MODE END -->
+
+  </header>
+  <!-------------------------------------------------- NAV ENDS(back to toggle & dark mode toggle) ---------------------------------------------->
+
+  <!----------------------------------------------------------------- HEADER ENDS --------------------------------------------------------------->
+
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <!------------------------------------------------------- CONTACT US PAGE START --------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <main>
+    <!-- CONTACT BANNER -->
+    <section id="contactBanner">
+      <div class="heading">
+        <h2>Contact</h2>
+        <p>Home / Contact</p>
+      </div>
+    </section>
+
+    <!-- CONTACT CART -->
+    <section id="contactCart">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 cart">
+            <div class="contactCart">
+              <div class="row">
+                <div class="cartIcon col-2">
+                  <img src="./Assets/img/contact call.svg" alt="">
+                </div>
+                <div class="contactInfo col-10">
+                  <h2>Call to Us:</h2>
+                  <p>We’re available from 08 am to 10 pm
+                    USA,
+                    7 days a week.
+                  </p>
+                  <h5>Customer Support:</h5>
+                  <a href="+8801682024792">+13008660286</a>
+                  <h5 class="mt-2">Head Office Support:</h5>
+                  <a href="+8801682024792">+13008660290</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 cart">
+            <div class="contactCart">
+              <div class="row">
+                <div class="cartIcon col-2">
+                  <img src="./Assets/img/contact email.svg" alt="">
+                </div>
+                <div class="contactInfo col-10">
+                  <h2>Write to Email Us:</h2>
+                  <p>Fill out our form and we will contact you
+                    within 24 hours.
+                  </p>
+                  <h5>Customer Support:</h5>
+                  <a href="mailto:soikat.pciu.cse19@gmail.com">aetor.info@gmail.com</a>
+                  <h5 class="mt-2">Head Office Support:</h5>
+                  <a href="mailto:soikat.pciu.cse19@gmail.com">aetorhead.@example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 cart">
+            <div class="contactCart">
+              <div class="row">
+                <div class="cartIcon col-2">
+                  <img src="./Assets/img/contact web.svg" alt="">
+                </div>
+                <div class="contactInfo col-10">
+                  <h2>Follow to Us:</h2>
+                  <p>Visit specific sites to find us online innovate bricks</p>
+                  <h5>Customer Support:</h5>
+                  <a target="_blank" href="https://facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a target="_blank" href="https://x.com/">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a target="_blank" href="https://instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a target="_blank" href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+
+                  <h5>Head Office Support:</h5>
+                  <a target="_blank" href="https://facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a target="_blank" href="https://x.com/">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a target="_blank" href="https://instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a target="_blank" href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contactForm">
+      <div class="container">
+        <div class="GetInTouch row">
+          <div class="col-lg-6 gettext order-2 order-lg-1">
+            <h2>Get in Touch</h2>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Name *" required>
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="Your Email *" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Phone Number *" required>
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your Title">
+                </div>
+              </div>
+              <div class="mb-3">
+                <textarea placeholder="Message *" required style="width: 100%; height: 250px;"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 ps-0 order-1 order-lg-2 d-none d-lg-block">
+            <img src="./Assets/img/contact us.png" alt="Contact" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------- CONTACT US PAGE END --------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+  <!------------------------------------------------------------ FOOTER START ------------------------------------------------------------------->
+  <footer>
+    <div class="container">
+      <div class="overly w-100 d-none d-lg-block">
+        <div class="row gy-3 align-items-center">
+          <!-- Free Shipping -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free shiping.svg" alt="Free Shipping">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE SHIPPING</h4>
+                <p>All orders over <span>$150</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Payment -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/quick payment.svg" alt="Quick Payment">
+              </div>
+              <div class="ctn col-9">
+                <h4>QUICK PAYMENT</h4>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Free Returns -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free returns.svg" alt="Free Returns">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE RETURNS</h4>
+                <p>Return money within 30 days</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 24/7 Support -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/support.svg" alt="24/7 Support">
+              </div>
+              <div class="ctn col-9">
+                <h4>24/7 SUPPORT</h4>
+                <p>Quick Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerHeading gy-3 gy-lg-0 justify-content-between align-items-center">
+        <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+          <a href="https://facebook.com/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+          <a href="https://twitter.com/" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+          <a href="https://instagram.com/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+        </div>
+        <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo">
+          <a href="#"><img src="./Assets/img/Logo footer.png" alt="Aytor Logo"></a>
+        </div>
+        <div class="col-lg-4 col-12 order-3 paymentCards">
+          <a href="#">
+            <img src="./Assets/img/pay system.svg" alt="Payment Cards">
+          </a>
+        </div>
+      </div>
+
+      <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+        <div class="col-lg-2 col-12 col-sm-4 myAccount">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 support">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Customer Service</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Store Locations</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0">
+          <h4>Opening Time</h4>
+          <ul>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Mon-Tue:</p><span class="col-sm-7 col-3">8AM-10PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Wed:</p><span class="col-sm-7 col-3">8AM-7PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Fri:</p><span class="col-sm-7 col-3">7AM-12PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sat:</p><span class="col-sm-7 col-3">9AM-8PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sun:</p><span class="col-sm-7 col-3">Closed</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 contactUs">
+          <h4>Contact Us</h4>
+          <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broadway, New York, NY 10003, United States
+          </address>
+          <a href="tel:+8801682024792"><span><i class="fa-solid fa-phone"></i></span> +1 (800) 866-0286</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com"><span><i class="fa-solid fa-envelope"></i></span>
+            aetor.info@gmail.com</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com">info@aetor.com</a>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+          <h4>Newsletter</h4>
+          <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+          <form id="subscribeForm" action="#" method="get" onsubmit="return validateEmail()">
+            <div>
+              <input type="email" id="email" placeholder="Enter your email...." required>
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>© 2024 All Rights Reserved <span>🔁 Aytor</span> By <span>Soikat Dev</span>.</p>
+    </div>
+  </footer>
+
+  <!------------------------------------------------------------ FOOTER ENDS -------------------------------------------------------------------->
+
+
+
+  <!-- JS -->
+  <script src="./Assets/JS/jquery-3.7.1.min.js"></script>
+  <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+  <script src="./Assets/JS/jquery.countdown.min.js"></script>
+  <script src="./Assets/JS/slick.min.js"></script>
+  <script src="./Assets/JS/venobox.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./Assets/JS/app.js"></script>
+  <script>
+    AOS.init({
+
+    });
+  </script>
+</body>
+
+</html>

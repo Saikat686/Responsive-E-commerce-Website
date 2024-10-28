@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor-Shop Details</title>
+  <link rel="icon" href="./Assets/img/Favicon Logo.png" type="image/png">
+  <!-- CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/slick.css">
+  <link rel="stylesheet" href="./Assets/CSS/all.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/venobox.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/darkmode.css">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+  <!--------------------------------------------------------------- HEADER START ---------------------------------------------------------------->
+
+  <!---------------------------------------------------------------- NAV STARTS ----------------------------------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./Assets/img/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active" aria-current="page" href="#">Shop<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="shopgrid.html">Shop Items</a>
+                <a href="shopdetails.html">Shop Details</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Pages<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="about us.html">About Us</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Features <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="pagenotfound.html">Gift Card</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Blogs <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="blogs.html">Blogs</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="#" class="m-0 searchIconDesktop"><img src="./Assets/img/Search Box.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/user.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/heart.svg" alt=""></a>
+              <a href="#" class="position-relative">
+                <img src="./Assets/img/shopping-bag.svg" alt="">
+                <span class="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Search Bar lg -->
+    <div class="main-search-bar" id="mainSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV SMALL STARTS -->
+    <nav class="d-lg-none navbarSm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2 text-center">
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" class="bar-color">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+          </div>
+          <div class="col-8 text-center px-0 logo">
+            <a href="#"><img src="./Assets/img/Logo.png" alt=""></a>
+          </div>
+          <div class="col-2 px-0">
+            <div class="links">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="#" class="m-0"><img src="./Assets/img/heart.svg" alt=""></a>
+                  <a href="#" class="position-relative m-0 me-1">
+                    <img src="./Assets/img/shopping-bag.svg" alt="">
+                    <span class="cartCount">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAV BOTTOM STARTS -->
+    <div class="navbarBottom d-lg-none">
+      <div class="container">
+        <div class="row">
+          <ul class="d-flex justify-content-between w-100">
+            <li><a href="#"><i class="fa-solid fa-percent"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+          <!-- Search Icon for mobile -->
+          <a href="#" class="searchIcon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAV BOTTOM ENDS -->
+
+    <!-- Search Bar for sm -->
+    <div class="search-bar d-lg-none" id="searchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">
+          <img src="./Assets/img/Logo2.png" alt="Logo" class="img-fluid">
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-menu">
+        <nav class="menu">
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Shop<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="shopgrid.html">Shop Items</a></li>
+                <li><a href="shopdetails.html">Shop Details</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Pages<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="about us.html">About Us</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Features <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="pagenotfound.html">Gift Card</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Blogs <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="blogs.html">Blogs</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP START -->
+    <div class="backToTop">
+      <button><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+    <!-- BACK TO TOP END -->
+
+
+    <!-- DARK/LIGHT MODE TOGGLE STARTS -->
+    <button id="toggle-mode" class="toggle-btn">
+      <i class="fas fa-moon"></i>
+    </button>
+    <!-- DARK/LIGHT MODE TOGGLE ENDS -->
+
+
+    <!-- SPLASH MODE START -->
+    <div id="logo-splash" class="logo-splash">
+      <div class="circle-animation outer-circle"></div>
+      <div class="circle-animation inner-circle"></div>
+      <img src="./Assets/img/Splash Logo.png" alt="Logo" class="logo">
+    </div>
+    <!-- SPLASH MODE END -->
+
+  </header>
+  <!-------------------------------------------------- NAV ENDS(back to toggle & dark mode toggle) ---------------------------------------------->
+
+  <!----------------------------------------------------------------- HEADER ENDS --------------------------------------------------------------->
+
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------- SHOP DETAILS START ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <main>
+    <section id="shopdetailsBanner">
+      <div class="heading">
+        <h2>Shop - Details</h2>
+        <p>Home / Shop</p>
+      </div>
+    </section>
+
+
+    <!-- SHOP DETAILS(PRODUCT DEATILS) STARTS -->
+    <section id="productDetail">
+      <div class="container">
+        <div class="row">
+          <!-- Product Images Section -->
+          <div class="col-lg-6 mt-2">
+            <!-- Image Slider Top -->
+            <div class="imageSliderTop col-12 mt-2">
+              <div class="sliderMain">
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderSlide">
+                  <div class="productCardLarge">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd lg 6.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image Slider Bottom (Thumbnails) -->
+            <div class="imageSliderBottom col-12 mt-2">
+              <div class="sliderThumbnails">
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm 4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm 5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="thumbnailSlide">
+                  <div class="productCardSmall">
+                    <div class="productImage">
+                      <img class="img-fluid w-100" src="./Assets/img/pd sm 6.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Information Section -->
+          <div class="col-lg-6 mt-2">
+            <div class="productInfoSection">
+              <h2>Leather Jackets</h2>
+              <div class="ratingSection">
+                <div class="averageRating">5.00</div>
+                <div class="starRating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#">(5 Customer Reviews)</a>
+              </div>
+              <p class="price">$125.65 <del>$150.65</del></p>
+              <p class="productDescription">Swiftly enhance comprehensive systems for seamless year-round e-commerce.
+                Consistently nurture exceptional catalysts for transformation through exemplary leadership skills.
+                Collaboratively refine distributed functions, moving beyond conventional methods of empowerment.</p>
+              <hr>
+
+              <!-- Size and Color Selection -->
+              <div class="productAttributes">
+                <div class="attribute">
+                  <label for="sizeSelect">Size:</label>
+                  <select id="sizeSelect" class="form-select" name="attribute_size"
+                    data-attribute_name="attribute_size">
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+                <div class="attribute">
+                  <label for="colorSelect">Color:</label>
+                  <select id="colorSelect" class="form-select" name="attribute_color"
+                    data-attribute_name="attribute_color">
+                    <option value="pink">Pink</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="white">White</option>
+                    <option value="ash">Ash</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Quantity Selector and Action Buttons -->
+              <div class="actionButtons">
+                <div class="quantitySelector">
+                  <label class="screen-reader-text" for="quantityInput">Quantity:</label>
+                  <button type="button" class="quantityMinus btn"><i class="fa-solid fa-minus"></i></button>
+                  <input type="text" id="quantityInput" class="quantityValue form-control d-inline-block" value="1"
+                    readonly>
+                  <button type="button" class="quantityPlus btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <a href="#" class="addToCartButton">
+                  <span class="buttonText"><i class="fa-solid fa-cart-plus"></i> Add To Cart</span>
+                </a>
+                <a href="#" class="iconButton d-none d-sm-block d-lg-block"><i class="fa-solid fa-heart"></i></a>
+                <a href="#" class="iconButton d-none d-sm-block d-lg-block"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <hr>
+
+              <!-- Product Meta Information -->
+              <div class="productMeta">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="metaDetails">
+                      <span>SKU: <a href="#">W0243</a></span>
+                      <span>Tags: <a href="#">Hot,</a> <a href="#">Women</a></span>
+                      <span>Category: <a href="#">Dress,</a> <a href="#">T-Shirt,</a> <a href="#">Mini Scut</a></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-end">
+                    <div class="socialMediaLinks">
+                      <div class="socialIcons d-md-none d-none d-lg-block">
+                        <span><a target="_blank" href="https://www.facebook.com/"><i
+                              class="fa-brands fa-facebook-f"></i></a></span>
+                        <span><a target="_blank" href="https://x.com/"><i class="fa-brands fa-twitter"></i></a></span>
+                        <span><a target="_blank" href="https://www.instagram.com/"><i
+                              class="fa-brands fa-instagram"></i></a></span>
+                        <span><a target="_blank" href="https://www.pinterest.com/"><i
+                              class="fa-brands fa-pinterest-p"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- SHOP DETAILS(PRODUCT DEATILS) ENDS -->
+
+
+
+    <!-- SHOP DETAILS(PRODUCTMORE DEATILS) STARTS -->
+    <section class="ProductmoreDetails">
+      <div class="container">
+        <!-- Tabs for Large Screens -->
+        <div class="d-none d-lg-block">
+          <ul class="nav nav-tabs nav-tabs-custom" id="detailsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#description"
+                type="button" role="tab" aria-controls="description" aria-selected="true">
+                Product Description
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button"
+                role="tab" aria-controls="reviews" aria-selected="false">
+                Customer Reviews (5)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#additional-info"
+                type="button" role="tab" aria-controls="additional-info" aria-selected="false">
+                Additional Information
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="detailsTabContent">
+            <!-- Product Description Tab Pane -->
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="desc-tab">
+              <div class="DescriptionContent">
+                <p>
+                  Effortlessly cultivate adaptable users through front-end human resources.
+                  Effectively harness team-building technology to foster goal-oriented frameworks.
+                  Proactively create interoperable e-business strategies that emphasize value-driven outcomes.
+                  Thoroughly explore validated content alongside multifunctional core competencies.
+                  Continuously enhance team-driven process improvements to optimize premier functionalities.
+                  Holistically nurture integrated methodologies over purely virtual technologies.
+                  Strategically focus on interactive synergies while avoiding process-centric e-markets.
+                  Pursue comprehensive leadership skills across the enterprise for effective governance.
+                  Collaboratively streamline standardized expertise within efficient bandwidth limits.
+                  Conveniently promote holistic collaboration and idea-sharing instead of fragmented strategic areas.
+                  <br> <br>
+                  Enthusiastically unify ethical frameworks to cultivate shared understanding.
+                  Vigorously pursue resource-maximizing leadership skills while avoiding outdated action items.
+                  Credibly influence alternative expertise to achieve economically viable outcomes.
+                  Dynamically collaborate to enhance empowered benefits through effective partnerships.
+                  Confidently enable potential infomediaries to create engaging content.
+                  Embrace 2.0 paradigms with a focus on professional intellectual capital.
+                  Strategically develop parallel growth initiatives without relying on conventional web services.
+                  Boldly reimagine the existing foundation to foster innovation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Customer Reviews Tab Pane -->
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+              <div class="ReviewsContainer">
+                <!-- Review Item 1 -->
+                <div class="ReviewItem">
+                  <div class="ReviewAvatar">
+                    <img src="./Assets/img/customer review 1.png" alt="">
+                  </div>
+                  <div class="ReviewContent">
+                    <div class="ReviewStars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Soikat Dev <span>08 October, 2024</span></h4>
+                    <p>
+                      Perfect fit and soft, durable leather. Stylish and great for fall. Tons of compliments!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Review Item 2 -->
+                <div class="ReviewItem">
+                  <div class="ReviewAvatar">
+                    <img src="./Assets/img/customer review2.png" alt="">
+                  </div>
+                  <div class="ReviewContent">
+                    <div class="ReviewStars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <h4>Anika Chowdhury<span>18 July, 2024</span></h4>
+                    <p>
+                      Cool and edgy jacket! True to size, just wish it had more pockets.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Review Item 3 -->
+                <div class="ReviewItem">
+                  <div class="ReviewAvatar">
+                    <img src="./Assets/img/customer review3.png" alt="">
+                  </div>
+                  <div class="ReviewContent">
+                    <div class="ReviewStars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>Kazi Faisal<span>02 March, 2024</span></h4>
+                    <p>
+                      Looks good but had a strong odor at first. Not as warm as expected.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Review Item 4 -->
+                <div class="ReviewItem">
+                  <div class="ReviewAvatar">
+                    <img src="./Assets/img/customer review4.png" alt="">
+                  </div>
+                  <div class="ReviewContent">
+                    <div class="ReviewStars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Ivy <span>10 March, 2023</span></h4>
+                    <p>
+                      Best leather jacket I’ve owned—soft, sturdy, and stylish. Worth every penny.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Review Item 5 -->
+                <div class="ReviewItem">
+                  <div class="ReviewAvatar">
+                    <img src="./Assets/img/customer review5.png" alt="">
+                  </div>
+                  <div class="ReviewContent">
+                    <div class="ReviewStars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>Henry <span>17 February, 2023</span></h4>
+                    <p>
+                      Stylish but has a strong leather smell at first. Not very warm for winter
+                    </p>
+                  </div>
+                </div>
+
+
+                <!-- PAGINATION STARTS -->
+                <div class="container">
+                  <div class="row">
+                    <div class="view text-center">
+                      <a href="#" class="prev-btn"><i class="fa-solid fa-arrow-left-long"></i>Prev</a>
+                      <a href="#" class="num">1</a>
+                      <a href="#" class="num">2</a>
+                      <a href="#" class="next-btn">Next<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Information Tab Pane -->
+            <div class="tab-pane fade" id="additional-info" role="tabpanel" aria-labelledby="info-tab">
+              <div class="AdditionalInfoCards">
+                <!-- Info Card 1 -->
+                <div class="AdditionalInfoCard">
+                  <h5>Color Options</h5>
+                  <p>Pink,Maroon,Black,Brown,Navy Blue</p>
+                </div>
+
+                <!-- Info Card 2 -->
+                <div class="AdditionalInfoCard">
+                  <h5>Dimensions</h5>
+                  <p>Sizes: Small, Medium, Large, X-Large, XX-Large.
+                    <br>
+                    Length: 24" (61 cm).Chest Width: 42" (106.5 cm).
+                  </p>
+                </div>
+
+                <!-- Info Card 3 -->
+                <div class="AdditionalInfoCard">
+                  <h5>Material</h5>
+                  <p>100% Genuine Leather.
+                    <br>Heavy-duty YKK zippers.
+                    <br>2 external zippered side pockets.
+                  </p>
+                </div>
+
+                <!-- Info Card 4 -->
+                <div class="AdditionalInfoCard">
+                  <h5>Warranty</h5>
+                  <p>1-Year Manufacturer’s Warranty.
+                    <br>
+                    30-Day Return Policy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Tabs for Large Screens -->
+
+        <!-- Accordion for Small and Medium Screens -->
+        <div class="accordion accordion-custom d-lg-none" id="detailsAccordion">
+          <!-- Product Description Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDescription">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDescription" aria-expanded="false" aria-controls="collapseDescription">
+                Product Description
+              </button>
+            </h2>
+            <div id="collapseDescription" class="accordion-collapse collapse" aria-labelledby="headingDescription"
+              data-bs-parent="#detailsAccordion">
+              <div class="accordion-body-custom">
+                <div class="DescriptionContent">
+                  <p>
+                    Effortlessly cultivate adaptable users through front-end human resources.
+                    Effectively harness team-building technology to foster goal-oriented frameworks.
+                    Proactively create interoperable e-business strategies that emphasize value-driven outcomes.
+                    Thoroughly explore validated content alongside multifunctional core competencies.
+                    Continuously enhance team-driven process improvements to optimize premier functionalities.
+                    Holistically nurture integrated methodologies over purely virtual technologies.
+                    Strategically focus on interactive synergies while avoiding process-centric e-markets.
+                    Pursue comprehensive leadership skills across the enterprise for effective governance.
+                    Collaboratively streamline standardized expertise within efficient bandwidth limits.
+                    Conveniently promote holistic collaboration and idea-sharing instead of fragmented strategic areas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Reviews Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingReviews">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseReviews" aria-expanded="false" aria-controls="collapseReviews">
+                Customer Reviews (5)
+              </button>
+            </h2>
+            <div id="collapseReviews" class="accordion-collapse collapse" aria-labelledby="headingReviews"
+              data-bs-parent="#detailsAccordion">
+              <div class="accordion-body-custom">
+                <div class="ReviewsContainer">
+                  <!-- Review Item 1 -->
+                  <div class="ReviewItem">
+                    <div class="ReviewAvatar">
+                      <img src="./Assets/img/customer review 1.png" alt="">
+                    </div>
+                    <div class="ReviewContent">
+                      <div class="ReviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h4>Soikat Dev <span>08 October, 2024</span></h4>
+                      <p>
+                        Perfect fit and soft, durable leather. Stylish and great for fall. Tons of compliments!
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Review Item 2 -->
+                  <div class="ReviewItem">
+                    <div class="ReviewAvatar">
+                      <img src="./Assets/img/customer review2.png" alt="">
+                    </div>
+                    <div class="ReviewContent">
+                      <div class="ReviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                      </div>
+                      <h4>Anika Chowdhury<span>18 July, 2024</span></h4>
+                      <p>
+                        Cool and edgy jacket! True to size, just wish it had more pockets.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Review Item 3 -->
+                  <div class="ReviewItem">
+                    <div class="ReviewAvatar">
+                      <img src="./Assets/img/customer review3.png" alt="">
+                    </div>
+                    <div class="ReviewContent">
+                      <div class="ReviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <h4>Kazi Faisal <span>02 March, 2024</span></h4>
+                      <p>
+                        Looks good but had a strong odor at first. Not as warm as expected.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Review Item 4 -->
+                  <div class="ReviewItem">
+                    <div class="ReviewAvatar">
+                      <img src="./Assets/img/customer review4.png" alt="">
+                    </div>
+                    <div class="ReviewContent">
+                      <div class="ReviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h4>Ivy <span>10 March, 2023</span></h4>
+                      <p>
+                        Best leather jacket I’ve owned—soft, sturdy, and stylish. Worth every penny.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Review Item 5 -->
+                  <div class="ReviewItem">
+                    <div class="ReviewAvatar">
+                      <img src="./Assets/img/customer review5.png" alt="">
+                    </div>
+                    <div class="ReviewContent">
+                      <div class="ReviewStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <h4>Henry <span>17 February, 2023</span></h4>
+                      <p>
+                        Stylish but has a strong leather smell at first. Not very warm for winter
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- PAGINATION STARTS -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="view text-center">
+                        <a href="#" class="prev-btn"><i class="fa-solid fa-arrow-left-long"></i>Prev</a>
+                        <a href="#" class="num">1</a>
+                        <a href="#" class="num">2</a>
+                        <a href="#" class="next-btn">Next<i class="fa-solid fa-arrow-right-long"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Information Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAdditionalInfo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseAdditionalInfo" aria-expanded="false" aria-controls="collapseAdditionalInfo">
+                Additional Information
+              </button>
+            </h2>
+            <div id="collapseAdditionalInfo" class="accordion-collapse collapse" aria-labelledby="headingAdditionalInfo"
+              data-bs-parent="#detailsAccordion">
+              <div class="accordion-body-custom">
+                <div class="AdditionalInfoCards">
+                  <!-- Info Card 1 -->
+                  <div class="AdditionalInfoCard">
+                    <h5>Color Options</h5>
+                    <p>Pink,Maroon,Black,Brown,Navy Blue</p>
+                  </div>
+
+                  <!-- Info Card 2 -->
+                  <div class="AdditionalInfoCard">
+                    <h5>Dimensions</h5>
+                    <p>Sizes: Small, Medium, Large, X-Large, XX-Large.
+                      <br>
+                      Length: 24" (61 cm).Chest Width: 42" (106.5 cm).
+                    </p>
+                  </div>
+
+                  <!-- Info Card 3 -->
+                  <div class="AdditionalInfoCard">
+                    <h5>Material</h5>
+                    <p>100% Genuine Leather.
+                      <br>Heavy-duty YKK zippers.
+                      <br>2 external zippered side pockets.
+                    </p>
+                  </div>
+
+                  <!-- Info Card 4 -->
+                  <div class="AdditionalInfoCard">
+                    <h5>Warranty</h5>
+                    <p>1-Year Manufacturer’s Warranty.
+                      <br>
+                      30-Day Return Policy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SHOP DETAILS(PRODUCT DEATILS) ENDS -->
+
+
+    <!-- SHOP DETAILS(RELATED PRODUCTS) STARTS -->
+    <section id="relatedProduct">
+      <div class="container">
+        <h2 data-aos="flip-left" class="Heading">Related Products</h2>
+        <div class="productWrapper justify-content-between">
+
+          <!-- Product Card 1 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product1.png" alt="">
+                <div class="label">
+                  <span>New</span>
+                </div>
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>Trucker Cap</h4>
+                    <p>$95.60</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product2.png" alt="">
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>Ankle Boots</h4>
+                    <p>$900.65</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product3.png" alt="">
+                <div class="label">
+                  <span>New</span>
+                </div>
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>Casual Linen Shirt</h4>
+                    <p>$200.45</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product4.png" alt="">
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>Slim-Fit Polo</h4>
+                    <p>$250.55</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product5.png" alt="">
+                <div class="label">
+                  <span>New</span>
+                </div>
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>High-Top Sneakers</h4>
+                    <p>$120.45</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="productSlider" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productCart p-3">
+              <div class="cartItem">
+                <img class="img-fluid w-100" src="./Assets/img/related product6.png" alt="">
+              </div>
+              <div class="productDetails">
+                <div class="row">
+                  <div class="col-7">
+                    <h4>Cotton Shirt</h4>
+                    <p>$100.30</p>
+                  </div>
+                  <div class="col-5 text-right">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SHOP DETAILS(RELATED PRODUCTS) ENDS -->
+  </main>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------- SHOP DETAILS END ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+  <!------------------------------------------------------------ FOOTER START ------------------------------------------------------------------->
+  <footer>
+    <div class="container">
+      <div class="overly w-100 d-none d-lg-block">
+        <div class="row gy-3 align-items-center">
+          <!-- Free Shipping -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free shiping.svg" alt="Free Shipping">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE SHIPPING</h4>
+                <p>All orders over <span>$150</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Payment -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/quick payment.svg" alt="Quick Payment">
+              </div>
+              <div class="ctn col-9">
+                <h4>QUICK PAYMENT</h4>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Free Returns -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free returns.svg" alt="Free Returns">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE RETURNS</h4>
+                <p>Return money within 30 days</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 24/7 Support -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/support.svg" alt="24/7 Support">
+              </div>
+              <div class="ctn col-9">
+                <h4>24/7 SUPPORT</h4>
+                <p>Quick Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerHeading gy-3 gy-lg-0 justify-content-between align-items-center">
+        <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+          <a href="https://facebook.com/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+          <a href="https://twitter.com/" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+          <a href="https://instagram.com/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+        </div>
+        <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo">
+          <a href="#"><img src="./Assets/img/Logo footer.png" alt="Aytor Logo"></a>
+        </div>
+        <div class="col-lg-4 col-12 order-3 paymentCards">
+          <a href="#">
+            <img src="./Assets/img/pay system.svg" alt="Payment Cards">
+          </a>
+        </div>
+      </div>
+
+      <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+        <div class="col-lg-2 col-12 col-sm-4 myAccount">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 support">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Customer Service</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Store Locations</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0">
+          <h4>Opening Time</h4>
+          <ul>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Mon-Tue:</p><span class="col-sm-7 col-3">8AM-10PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Wed:</p><span class="col-sm-7 col-3">8AM-7PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Fri:</p><span class="col-sm-7 col-3">7AM-12PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sat:</p><span class="col-sm-7 col-3">9AM-8PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sun:</p><span class="col-sm-7 col-3">Closed</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 contactUs">
+          <h4>Contact Us</h4>
+          <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broadway, New York, NY 10003, United States
+          </address>
+          <a href="tel:+8801682024792"><span><i class="fa-solid fa-phone"></i></span> +1 (800) 866-0286</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com"><span><i class="fa-solid fa-envelope"></i></span>
+            aetor.info@gmail.com</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com">info@aetor.com</a>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+          <h4>Newsletter</h4>
+          <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+          <form id="subscribeForm" action="#" method="get" onsubmit="return validateEmail()">
+            <div>
+              <input type="email" id="email" placeholder="Enter your email...." required>
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>© 2024 All Rights Reserved <span>🔁 Aytor</span> By <span>Soikat Dev</span>.</p>
+    </div>
+  </footer>
+
+  <!------------------------------------------------------------ FOOTER ENDS -------------------------------------------------------------------->
+
+
+
+  <!-- JS -->
+  <script src="./Assets/JS/jquery-3.7.1.min.js"></script>
+  <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+  <script src="./Assets/JS/jquery.countdown.min.js"></script>
+  <script src="./Assets/JS/slick.min.js"></script>
+  <script src="./Assets/JS/venobox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./Assets/JS/app.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      once: false,
+    });
+  </script>
+</body>
+
+</html>

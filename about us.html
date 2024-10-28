@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor-About Us</title>
+    <link rel="icon" href="./Assets/img/Favicon Logo.png" type="image/png">
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/slick.css">
+    <link rel="stylesheet" href="./Assets/CSS/all.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/venobox.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/darkmode.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+    <!------------------------------------------------------------- HEADER START ---------------------------------------------------------------->
+
+    <!-------------------------------------------------------------- NAV STARTS ----------------------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./Assets/img/Logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" aria-current="page" href="#">Shop<span>
+                                    <i class="fa-solid fa-chevron-down"></i></span></a>
+                            <!-- Dropdown content -->
+                            <div class="dropdown-content">
+                                <a href="shopgrid.html">Shop Items</a>
+                                <a href="shopdetails.html">Shop Details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Pages<span>
+                                    <i class="fa-solid fa-chevron-down"></i></span></a>
+                            <!-- Dropdown content -->
+                            <div class="dropdown-content">
+                                <a href="about us.html">About Us</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" aria-current="page" href="#">Features <span>
+                                    <i class="fa-solid fa-chevron-down"></i></span></a>
+                            <!-- Dropdown content -->
+                            <div class="dropdown-content">
+                                <a href="pagenotfound.html">Gift Card</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" aria-current="page" href="#">Blogs <span>
+                                    <i class="fa-solid fa-chevron-down"></i></span></a>
+                            <!-- Dropdown content -->
+                            <div class="dropdown-content">
+                                <a href="blogs.html">Blogs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#" class="m-0 searchIconDesktop"><img src="./Assets/img/Search Box.svg" alt=""></a>
+                            <a href="#"><img src="./Assets/img/user.svg" alt=""></a>
+                            <a href="#"><img src="./Assets/img/heart.svg" alt=""></a>
+                            <a href="#" class="position-relative">
+                                <img src="./Assets/img/shopping-bag.svg" alt="">
+                                <span class="cartCount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Search Bar lg -->
+        <div class="main-search-bar" id="mainSearchBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <input type="text" class="form-control me-2" placeholder="Search here...">
+                        <button class="btn btn-primary"><span><i
+                                    class="fa-solid fa-magnifying-glass"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV SMALL STARTS -->
+        <nav class="d-lg-none navbarSm">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2 text-center">
+                        <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"
+                            class="bar-color">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </a>
+                    </div>
+                    <div class="col-8 text-center px-0 logo">
+                        <a href="#"><img src="./Assets/img/Logo.png" alt=""></a>
+                    </div>
+                    <div class="col-2 px-0">
+                        <div class="links">
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a href="#" class="m-0"><img src="./Assets/img/heart.svg" alt=""></a>
+                                    <a href="#" class="position-relative m-0 me-1">
+                                        <img src="./Assets/img/shopping-bag.svg" alt="">
+                                        <span class="cartCount">0</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- NAV BOTTOM STARTS -->
+        <div class="navbarBottom d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <ul class="d-flex justify-content-between w-100">
+                        <li><a href="#"><i class="fa-solid fa-percent"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                    <!-- Search Icon for mobile -->
+                    <a href="#" class="searchIcon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- NAV BOTTOM ENDS -->
+
+        <!-- Search Bar for sm -->
+        <div class="search-bar d-lg-none" id="searchBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <input type="text" class="form-control me-2" placeholder="Search here...">
+                        <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">
+                    <img src="./Assets/img/Logo2.png" alt="Logo" class="img-fluid">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-menu">
+                <nav class="menu">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#" class="d-flex justify-content-between align-items-center">Shop<i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sidebar list-unstyled ms-3">
+                                <li><a href="shopgrid.html">Shop Items</a></li>
+                                <li><a href="shopdetails.html">Shop Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex justify-content-between align-items-center">Pages<i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sidebar list-unstyled ms-3">
+                                <li><a href="about us.html">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex justify-content-between align-items-center">Features <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sidebar list-unstyled ms-3">
+                                <li><a href="pagenotfound.html">Gift Card</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex justify-content-between align-items-center">Blogs <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sidebar list-unstyled ms-3">
+                                <li><a href="blogs.html">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- BACK TO TOP START -->
+        <div class="backToTop">
+            <button><i class="fa-solid fa-chevron-up"></i></button>
+        </div>
+        <!-- BACK TO TOP END -->
+
+
+        <!-- DARK/LIGHT MODE TOGGLE STARTS -->
+        <button id="toggle-mode" class="toggle-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+        <!-- DARK/LIGHT MODE TOGGLE ENDS -->
+
+
+        <!-- SPLASH MODE START -->
+        <div id="logo-splash" class="logo-splash">
+            <div class="circle-animation outer-circle"></div>
+            <div class="circle-animation inner-circle"></div>
+            <img src="./Assets/img/Splash Logo.png" alt="Logo" class="logo">
+        </div>
+        <!-- SPLASH MODE END -->
+
+    </header>
+    <!------------------------------------------------ NAV ENDS(back to toggle & dark mode toggle) ---------------------------------------------->
+
+    <!--------------------------------------------------------------- HEADER ENDS --------------------------------------------------------------->
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------- ABOUT US PAGE START --------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <!--------------------------------------------------- ABOUT US BANNER START ------------------------------------------------------------->
+        <section id="aboutusBanner">
+            <div class="heading">
+                <h2>About Us</h2>
+                <p>Home / About Us</p>
+            </div>
+        </section>
+        <!----------------------------------------------------- ABOUT US BANNER END ------------------------------------------------------------->
+
+
+        <!------------------------------------------------------ ABOUT SHOP STARTS -------------------------------------------------------------->
+        <section id="aboutShop">
+            <div class="container">
+                <div class="aboutshopContent col-lg-11 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 image" data-aos="fade-right">
+                            <img src="./Assets/img/about shop img.png" alt="">
+                        </div>
+                        <div class="col-lg-6 ctn">
+                            <div class="aboutshopIntro">
+                                <h2>Learn About Aetor Shop</h2>
+                                <p>Engage in meaningful interactions that foster collaborative relationships within a
+                                    team-oriented framework.
+                                    Distinctively influence significant meta services through thoroughly validated best
+                                    practices, ensuring
+                                    seamless enablement.
+                                </p>
+                            </div>
+                            <div class="aboutshopCheak" data-aos="fade-up" data-aos-delay="200">
+                                <ul>
+                                    <li><span><i class="fa-solid fa-circle-check"></i></span> Assertively customize
+                                        robust potentialities and economical.</li>
+                                    <li><span><i class="fa-solid fa-circle-check"></i></span> Seamlessly disintermediate
+                                        distributed intellectual capital.</li>
+                                    <li><span><i class="fa-solid fa-circle-check"></i></span> Credibly enable B2C
+                                        potentialities after strategic.</li>
+                                </ul>
+                                <a href="#" data-aos="fade-up" data-aos-delay="300">Discover More
+                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------ ABOUT SHOP STARTS -------------------------------------------------------------->
+
+
+        <!----------------------------------------------------- SHOP GROWTH(COUNTER) START ------------------------------------------------------>
+        <section id="shopGrowth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6 shopgrowthContent">
+                        <span><img src="./Assets/img/shopgrowth1.svg" alt=""></span>
+                        <h4 class="counter" data-value="22.3">22.3k</h4>
+                        <p>Products for sale</p>
+                    </div>
+                    <div class="col-lg-3 col-6 shopgrowthContent">
+                        <span><img src="./Assets/img/shopgrowth2.svg" alt=""></span>
+                        <h4 class="counter" data-value="14.6">14.6k</h4>
+                        <p>Sellers active on shop</p>
+                    </div>
+                    <div class="col-lg-3 col-6 shopgrowthContent">
+                        <span><img src="./Assets/img/shopgrowth3.svg" alt=""></span>
+                        <h4 class="counter" data-value="75.9">75.9k</h4>
+                        <p>Customer active on store</p>
+                    </div>
+                    <div class="col-lg-3 col-6 shopgrowthContent">
+                        <span><img src="./Assets/img/shopgrowth4.svg" alt=""></span>
+                        <h4 class="counter" data-value="35.5">35.5k</h4>
+                        <p>Annual gross sales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------ SHOP GROWTH(COUNTER) ENDS ------------------------------------------------------>
+
+
+
+        <!----------------------------------------------------------- OUR STORY STARTS ---------------------------------------------------------->
+        <section id="ourStory">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 order-lg-1 order-md-1 order-1 text-start" data-aos="fade-right"
+                        data-aos-duration="500">
+                        <div class="content">
+                            <h3>Our Story</h3>
+                            <h6>Strategically advocate targeted services with insightful leadership. Effectively lead
+                                widespread services over client-focused approaches. Seamlessly integrate B2C advantages
+                                to enhance customer satisfaction. Dynamically enable cost-effective connectivity without
+                                compromising on quality resources. Skillfully negotiate with a forward-thinking
+                                approach.
+                                <br><br>
+                                Leverage user-focused technology to deliver seamless solutions with expertise.
+                                Strategically evolve distinctive thematic areas without relying on cross-functional
+                                collaboration. Efficiently integrate adaptable functionalities over broad enterprise
+                                experiences, ensuring continuous and effective management.
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 order-lg-2 order-md-2 order-2 p-0" data-aos="fade-left"
+                        data-aos-duration="500">
+                        <div class="video">
+                            <div class="overlay">
+                                <a href="https://youtu.be/pfq000AF1i8?si=MLEI9gUkVS4xv9IZ" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                            <img class="w-100 h-100 d-block" src="./Assets/img/ourstory video.jpg"
+                                alt="Special Offer Video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------- OUR STORY ENDS ---------------------------------------------------------->
+
+
+
+        <!----------------------------------------------------------- ADVANTAGE STARTS ---------------------------------------------------------->
+        <section id="advantage">
+            <div class="container">
+                <div class="advantageContent w-100 d-none d-lg-block">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-sm-6 advantageCart" data-aos="fade-right" data-aos-delay="100">
+                            <div class="row align-items-center">
+                                <div class="image col-3">
+                                    <img class="w-100" src="./Assets/img/free shiping.svg" alt="">
+                                </div>
+                                <div class="details col-9">
+                                    <h4>FREE SHIPPING</h4>
+                                    <p>all orders over <span>$150</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 advantageCart" data-aos="fade-left" data-aos-delay="200">
+                            <div class="row align-items-center">
+                                <div class="image col-3">
+                                    <img class="w-100" src="./Assets/img/quick payment.svg" alt="">
+                                </div>
+                                <div class="details col-9">
+                                    <h4>QUICK PAYMENT</h4>
+                                    <p>100% secure payment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 advantageCart" data-aos="fade-right" data-aos-delay="300">
+                            <div class="row align-items-center">
+                                <div class="image col-3">
+                                    <img class="w-100" src="./Assets/img/free returns.svg" alt="">
+                                </div>
+                                <div class="details col-9">
+                                    <h4>FREE RETURNS</h4>
+                                    <p>Return money within 30 days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 advantageCart" data-aos="fade-left" data-aos-delay="400">
+                            <div class="row align-items-center">
+                                <div class="image col-3">
+                                    <img class="w-100" src="./Assets/img/support.svg" alt="">
+                                </div>
+                                <div class="details col-9">
+                                    <h4>24/7 SUPPORT</h4>
+                                    <p>Quick Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------- ADVANTAGE ENDS ---------------------------------------------------------->
+
+        <!------------------------------------------------------ LEADERSHIP EXPERT TEAM STARTS -------------------------------------------------->
+        <section id="expartTeam">
+            <div class="container">
+                <div class="heading">
+                    <h1 data-aos="flip-left">Leadership Expert Team</h1>
+                </div>
+                <div class="teamSlider">
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="100">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 1.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Michel Richard</h5>
+                            <p>Founder</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="200">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 2.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Imon Hossain</h5>
+                            <p>Product Manager</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="300">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 3.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Sudjida Lufz</h5>
+                            <p>Human Resources Manager</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="400">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 4.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Ketty Josep</h5>
+                            <p>Marketing Manager</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="500">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 5.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Oliver Smith</h5>
+                            <p>CTO</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="500"
+                        data-aos-delay="600">
+                        <div class="img">
+                            <img class="w-100" src="./Assets/img/expart team 6.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>James Brown</h5>
+                            <p>IT Project Manager</p>
+                            <div class="socialIcons">
+                                <a target="_blank" href="https://facebook.com/"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" href="https://instagram.com/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="https://pinterest.com/"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <span class="leftArrow" data-aos="fade-left" data-aos-duration="500"><i
+                            class="fa-solid fa-caret-left"></i></span>
+                    <span class="rightArrow" data-aos="fade-right" data-aos-duration="500"><i
+                            class="fa-solid fa-caret-right"></i></span>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------- LEADERSHIP EXPERT TEAM ENDS ------------------------------------------------------>
+
+
+
+        <!--------------------------------------------------------- INSTAGRAM STARTS ------------------------------------------------------------>
+        <section id="instagram">
+            <div class="container">
+                <div class="heading">
+                    <h1 data-aos="flip-left">@Aetor Instagram</h1>
+                </div>
+                <div class="instaSlider">
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram1.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram2.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram3.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram4.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram5.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram6.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram7.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="instaSlide col-2">
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./Assets/img/instagram8.png" alt="">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news_slider_dots_container"></div>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------------------------------- INSTAGRAM ENDS ------------------------------------------------------------>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------- ABOUT US PAGE END --------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!---------------------------------------------------------- FOOTER START ------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="overly w-100 d-none d-lg-block">
+                <div class="row gy-3 align-items-center">
+                    <!-- Free Shipping -->
+                    <div class="col-lg-3 overlyBody">
+                        <div class="row align-items-center">
+                            <div class="image col-3">
+                                <img class="w-100" src="./Assets/img/free shiping.svg" alt="Free Shipping">
+                            </div>
+                            <div class="ctn col-9">
+                                <h4>FREE SHIPPING</h4>
+                                <p>All orders over <span>$150</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Payment -->
+                    <div class="col-lg-3 overlyBody">
+                        <div class="row align-items-center">
+                            <div class="image col-3">
+                                <img class="w-100" src="./Assets/img/quick payment.svg" alt="Quick Payment">
+                            </div>
+                            <div class="ctn col-9">
+                                <h4>QUICK PAYMENT</h4>
+                                <p>100% secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Free Returns -->
+                    <div class="col-lg-3 overlyBody">
+                        <div class="row align-items-center">
+                            <div class="image col-3">
+                                <img class="w-100" src="./Assets/img/free returns.svg" alt="Free Returns">
+                            </div>
+                            <div class="ctn col-9">
+                                <h4>FREE RETURNS</h4>
+                                <p>Return money within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 24/7 Support -->
+                    <div class="col-lg-3 overlyBody">
+                        <div class="row align-items-center">
+                            <div class="image col-3">
+                                <img class="w-100" src="./Assets/img/support.svg" alt="24/7 Support">
+                            </div>
+                            <div class="ctn col-9">
+                                <h4>24/7 SUPPORT</h4>
+                                <p>Quick Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footerHeading gy-3 gy-lg-0 justify-content-between align-items-center">
+                <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+                    <a href="https://facebook.com/" target="_blank"><span><i
+                                class="fa-brands fa-facebook-f"></i></span></a>
+                    <a href="https://twitter.com/" target="_blank"><span><i
+                                class="fa-brands fa-x-twitter"></i></span></a>
+                    <a href="https://instagram.com/" target="_blank"><span><i
+                                class="fa-brands fa-instagram"></i></span></a>
+                    <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+                </div>
+                <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo">
+                    <a href="#"><img src="./Assets/img/Logo footer.png" alt="Aytor Logo"></a>
+                </div>
+                <div class="col-lg-4 col-12 order-3 paymentCards">
+                    <a href="#">
+                        <img src="./Assets/img/pay system.svg" alt="Payment Cards">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+                <div class="col-lg-2 col-12 col-sm-4 myAccount">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+                        <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12 col-sm-4 support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+                        <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a>
+                        </li>
+                        <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a>
+                        </li>
+                        <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Customer
+                                Service</a></li>
+                        <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Store
+                                Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0">
+                    <h4>Opening Time</h4>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <p class="col-sm-5 col-3">Mon-Tue:</p><span class="col-sm-7 col-3">8AM-10PM</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <p class="col-sm-5 col-3">Wed:</p><span class="col-sm-7 col-3">8AM-7PM</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <p class="col-sm-5 col-3">Fri:</p><span class="col-sm-7 col-3">7AM-12PM</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <p class="col-sm-5 col-3">Sat:</p><span class="col-sm-7 col-3">9AM-8PM</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <p class="col-sm-5 col-3">Sun:</p><span class="col-sm-7 col-3">Closed</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 contactUs">
+                    <h4>Contact Us</h4>
+                    <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broadway, New York, NY 10003,
+                        United States
+                    </address>
+                    <a href="tel:+8801682024792"><span><i class="fa-solid fa-phone"></i></span> +1 (800) 866-0286</a>
+                    <a href="mailto:soikat.pciu.cse19@gmail.com"><span><i class="fa-solid fa-envelope"></i></span>
+                        aetor.info@gmail.com</a>
+                    <a href="mailto:soikat.pciu.cse19@gmail.com">info@aetor.com</a>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+                    <h4>Newsletter</h4>
+                    <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                    <form id="subscribeForm" action="#" method="get" onsubmit="return validateEmail()">
+                        <div>
+                            <input type="email" id="email" placeholder="Enter your email...." required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>© 2024 All Rights Reserved <span>🔁 Aytor</span> By <span>Soikat Dev</span>.</p>
+        </div>
+    </footer>
+
+    <!---------------------------------------------------------- FOOTER ENDS -------------------------------------------------------------------->
+
+
+
+    <!-- JS -->
+    <script src="./Assets/JS/jquery-3.7.1.min.js"></script>
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/JS/jquery.countdown.min.js"></script>
+    <script src="./Assets/JS/slick.min.js"></script>
+    <script src="./Assets/JS/venobox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Assets/JS/app.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            once: false,
+        });
+    </script>
+</body>
+
+</html>

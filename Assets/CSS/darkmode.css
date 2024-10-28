@@ -1,0 +1,967 @@
+body.dark-mode {
+    background-color: #0A0A0A;
+    color: #e0e0e0;
+}
+
+/********************************************************* ALL NAVS DARK STARTS *****************************************************************/
+/* Dark Mode Variables For Navbar */
+body.dark-mode {
+    /* Navbar Colors */
+    --navbar-bg-color: rgb(200, 85, 65);
+    --navbar-text-color: #e0e0e0;
+    --navbar-hover-color: #FFD700;
+    --navbar-icon-color: #ffffff;
+
+    /* Dropdown Menu Colors */
+    --dropdown-bg-color: #3d3d3d;
+    --dropdown-text-color: #ffffff;
+    --dropdown-hover-bg: rgb(200, 85, 65);
+    --dropdown-hover-text: #FFFFFF;
+
+    /* Search Icon Colors */
+    --search-icon-bg: rgb(255, 107, 107);
+    --search-icon-text: #1e1e1e;
+
+    /* Offcanvas Menu Colors */
+    --offcanvas-bg-color: rgb(140, 55, 45);
+    --offcanvas-text-color: #e0e0e0;
+
+    /* Toggle Button Colors */
+    --toggle-btn-bg: #333333;
+    --toggle-btn-color: #FFD700;
+    --toggle-btn-icon-color: #FFD700;
+}
+
+/* General Navbar Styles */
+body.dark-mode nav.navbar,
+body.dark-mode nav.navbarSm,
+body.dark-mode div.navbarBottom {
+    background-color: var(--navbar-bg-color);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+
+/* Navbar Logo */
+body.dark-mode nav.navbar .navbar-brand img,
+body.dark-mode nav.navbarSm .logo img {
+    filter: hue-rotate(60deg) saturate(1.3) brightness(1.3);
+}
+
+/* Navbar Links */
+body.dark-mode nav.navbar #myNav li a,
+body.dark-mode nav.navbarSm a,
+body.dark-mode .navbarBottom ul li a {
+    color: var(--navbar-text-color);
+}
+
+body.dark-mode nav.navbar #myNav li a.active,
+body.dark-mode nav.navbar #myNav li:hover a,
+body.dark-mode nav.navbarSm a:hover,
+body.dark-mode .navbarBottom ul li a:hover {
+    color: var(--navbar-hover-color);
+}
+
+/* Dropdown Menu */
+body.dark-mode .nav-item .dropdown-content {
+    background-color: var(--dropdown-bg-color);
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-item .dropdown-content a {
+    color: var(--dropdown-text-color);
+}
+
+body.dark-mode .nav-item .dropdown-content a:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--dropdown-hover-text) !important;
+}
+
+/* Navbar Bottom */
+body.dark-mode .navbarBottom {
+    background-color: var(--navbar-bg-color);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 54px 55px,
+        rgba(255, 255, 255, 0.12) 0px -12px 30px,
+        rgba(255, 255, 255, 0.12) 0px 4px 6px,
+        rgba(255, 255, 255, 0.17) 0px 12px 13px,
+        rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+body.dark-mode .navbarBottom ul li a {
+    color: var(--navbar-text-color);
+}
+
+body.dark-mode .navbarBottom .searchIcon {
+    background-color: var(--search-icon-bg);
+    color: var(--search-icon-text);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Offcanvas Menu */
+body.dark-mode .offcanvas {
+    background: #E65A50; 
+    background: linear-gradient(45deg, #CC7071 40%, #E65A50 60%, #E6B75E 100%);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    border-radius: 0 10px 10px 0;
+    width: 80% !important;
+}
+
+/* Animation keyframes */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    20% { background-position: 30% 70%; }
+    40% { background-position: 60% 30%; }
+    60% { background-position: 100% 50%; }
+    80% { background-position: 70% 80%; }
+    100% { background-position: 0% 50%; }
+}
+
+body.dark-mode .offcanvas .offcanvas-header {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 6px,
+}
+
+body.dark-mode .offcanvas .offcanvas-title img {
+    filter: hue-rotate(60deg) saturate(1.5) brightness(0.4);
+}
+
+body.dark-mode .offcanvas .offcanvas-body a {
+    color: var(--offcanvas-text-color);
+}
+
+body.dark-mode .offcanvas .menu ul li a {
+    color: #333333;
+}
+
+body.dark-mode .offcanvas .menu ul li ul.sidebar li a {
+    color: #333333;
+}
+
+
+/* Toggle Button */
+body.dark-mode .toggle-btn {
+    background: var(--toggle-btn-bg);
+    color: var(--toggle-btn-color);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .toggle-btn i {
+    color: var(--toggle-btn-icon-color);
+}
+
+/* Additional Transitions for Smoothness */
+body.dark-mode nav.navbar,
+body.dark-mode nav.navbarSm,
+body.dark-mode div.navbarBottom,
+body.dark-mode .offcanvas,
+body.dark-mode .nav-item .dropdown-content,
+body.dark-mode .toggle-btn {
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode nav.navbar a,
+body.dark-mode nav.navbarSm a,
+body.dark-mode .navbarBottom a,
+body.dark-mode .offcanvas a,
+body.dark-mode .toggle-btn {
+    transition: color 0.3s;
+}
+
+body.dark-mode nav.navbar .navbar-brand img,
+body.dark-mode nav.navbarSm .logo img,
+body.dark-mode .offcanvas .offcanvas-title img {
+    transition: filter 0.3s;
+}
+
+/* Dropdown Indicator Rotation */
+body.dark-mode .nav-item.show .nav-link .fa-caret-down {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+}
+
+/********************************************************** ALL NAVS DARK ENDS ******************************************************************/
+
+/*********************************************************** BANNER STARTS **********************************************************************/
+body.dark-mode .banner-dots .dot {
+    background-color: #1A1A1A;
+
+}
+
+body.dark-mode .banner-dots .dot.active {
+    width: 20px;
+    background-color: var(--1st-primary-color);
+}
+
+/*********************************************************** BANNER ENDS ************************************************************************/
+
+/******************************************************** BEAUTY ITEMS START ********************************************************************/
+body.dark-mode #beauty-cream .cream_card {
+    border: 2px solid #A5A5A5;
+}
+
+/******************************************************** BEAUTY ITEMS ENDS *********************************************************************/
+
+/*******************************************************  NEW ARRIVAL STARTS ********************************************************************/
+
+
+body.dark-mode #newArrival h2 {
+    color: #E0E0E0;
+}
+
+body.dark-mode .productSlide .product {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .productSlide .productContent p {
+    color: #E4E4E4;
+}
+
+body.dark-mode .productSlide .productContent a h4 {
+    color: #FFC93C;
+}
+
+body.dark-mode .productImage .overlay {
+    color: #ffffff;
+}
+
+body.dark-mode .productImage .overlay ul li a {
+    background-color: #ffffff;
+    color: var(--3d-primary-color);
+}
+
+body.dark-mode .productImage .overlay ul li a:hover {
+    background-color: var(--1st-primary-color);
+    color: #fff;
+}
+
+body.dark-mode .leftArrows,
+body.dark-mode .rightArrows {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/*********************************************************** NEW ARRIVAL ENDS *******************************************************************/
+
+
+/******************************************************* BEST SELLER STARTS *********************************************************************/
+body.dark-mode .BestSellProduct h2 {
+    color: #E0E0E0;
+}
+
+body.dark-mode .SellerSlide {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .SellerSlide .productImage {
+    background: #2F4F4F;
+}
+
+body.dark-mode .ProductContent p {
+    color: #E4E4E4;
+}
+
+body.dark-mode .ProductContent h4 {
+    color: #FFC93C;
+}
+
+/********************************************************* BEST SELLERS ENDS ********************************************************************/
+
+
+/***************************************************** DEALS OF THE DAY STARTS ******************************************************************/
+body.dark-mode #dealSlider h2 {
+    color: #E0E0E0;
+}
+
+body.dark-mode .wrapper {
+    background: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .wrapper .countdown {
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .wrapper .countdown ul li span {
+    color: #fff;
+}
+
+body.dark-mode .wrapper .countdown ul li::after {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode .wrapper .deal_slider .wrapper_container .wrapper_card {
+    background-color: #555;
+}
+
+body.dark-mode .deal_slider .wrapper_container .wrapper_card h3,
+body.dark-mode .deal_slider .wrapper_container .wrapper_card h1,
+body.dark-mode .deal_slider .wrapper_container .wrapper_card p {
+    color: black;
+}
+
+body.dark-mode .deal_slider .wrapper_container .wrapper_card a {
+    background: var(--3d-primary-color);
+    color: #fff;
+}
+
+body.dark-mode .wrapper .slick-dots .slick-active button {
+    background: var(--1st-primary-color);
+}
+
+/************************************************************** DEALS OF THE DAY ENDS ***********************************************************/
+
+
+/********************************************************** SPECIAL OFFERS STARTS ***************************************************************/
+body.dark-mode #offer {
+    background: #2f3640;
+}
+
+body.dark-mode .video .overlay a {
+    background: #e0e0e0;
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode .content span {
+    color: white;
+}
+
+body.dark-mode .content h3 {
+    color: white;
+}
+
+body.dark-mode .content p {
+    color: #d2dae2;
+}
+
+body.dark-mode .content a {
+    background-color: var(--1st-primary-color);
+    color: #E4E4E4;
+}
+
+/****************************************************************** SPECIAL OFFERS ENDS *********************************************************/
+
+
+/************************************************************* LEATEST NEWS STARTS **************************************************************/
+
+
+body.dark-mode .newsBox {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #news .newsBox .newsInfo h3 {
+    color: #FFC93C;
+}
+
+body.dark-mode #news .newsBox .newsInfo h3:hover {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #news .newsBox .newsInfo p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #news .news_slider_dots li.slick-active button {
+    background: var(--1st-primary-color);
+}
+
+/************************************************************* LEATEST NEWS ENDS ****************************************************************/
+
+/************************************************************** FOOTER OVERLAY ******************************************************************/
+body.dark-mode footer .overly,
+footer #aboutOerly .overlyCtn,
+#aboutOerly footer .overlyCtn {
+    background-color: #2F3640;
+}
+
+body.dark-mode footer .overly .ctn h4,
+footer #aboutOerly .overlyCtn .ctn h4,
+#aboutOerly footer .overlyCtn .ctn h4 {
+    color: #FFC93C;
+}
+
+body.dark-mode footer .overly .ctn p,
+footer #aboutOerly .overlyCtn .ctn p,
+#aboutOerly footer .overlyCtn .ctn p {
+    color: #E4E4E4;
+}
+
+/************************************************************* FOOTER OVERLAY ENDS **************************************************************/
+
+/************************************************************************************************************************************************/
+/**************************************************************** HOMEPAGE ENDS *****************************************************************/
+/************************************************************************************************************************************************/
+
+
+/*************************************************************************************************************************************************/
+/***************************************************************** SHOP(GRID/LIST) STARTS ********************************************************/
+/*************************************************************************************************************************************************/
+body.dark-mode #gridShop .prog-text p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #gridShop .prog-text .progress .progress-bar {
+    border: 2px solid #ffffff;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--1st-primary-color);
+}
+
+body.dark-mode #gridShop .gridProduct .labels,
+body.dark-mode #gridShop .listProduct .labels {
+    color: black;
+    background-color: var(--1st-primary-color);
+}
+
+body.dark-mode #gridShop .nav-item .nav-link {
+    border: 1px solid #e0e0e0;
+    background: #95a5a6;
+    color: #e0e0e0;
+}
+
+body.dark-mode #gridShop .nav-item .nav-link.active {
+    background: var(--1st-primary-color);
+}
+
+body.dark-mode .form-select {
+    background-color: #485460;
+    color: #e0e0e0;
+}
+
+body.dark-mode #gridShop .gridProduct {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #gridShop .gridProduct .productImage {
+    background: #2F4F4F;
+}
+
+body.dark-mode #gridShop .gridProduct .gridText h6 {
+    color: #FFC93C;
+}
+
+body.dark-mode #gridShop .gridProduct .gridText p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #gridShop .gridProduct .gridText .icon i {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #gridShop .gridProduct .productImage .overlay ul li a:hover {
+    background-color: var(--1st-primary-color);
+    color: #FFFFFF;
+}
+
+body.dark-mode #gridShop .listProduct .row {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: #2C2C2C;
+}
+
+body.dark-mode #gridShop .listProduct .listText h3 {
+    color: #FFC93C;
+}
+
+body.dark-mode #gridShop .listProduct .listText h5,
+body.dark-mode #gridShop .listProduct .listText h6 {
+    color: #E4E4E4;
+}
+
+body.dark-mode #gridShop .listProduct .listText .icon ul li a {
+    background-color: #E4E4E4;
+    color: black;
+}
+
+body.dark-mode #gridShop .listProduct .listText .icon ul li a:hover {
+    background-color: var(--1st-primary-color);
+    color: #FFFFFF;
+}
+
+
+body.dark-mode #gridShop .listProduct .listImage .overlay ul li a:hover {
+    background-color: var(--1st-primary-color);
+    color: #FFFFFF;
+}
+
+body.dark-mode #gridShop .view a {
+    color: #FFFFFF;
+}
+
+body.dark-mode #gridShop .view .prev-btn {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #gridShop .view .next-btn {
+    color: var(--1st-primary-color);
+}
+
+/*************************************************************************************************************************************************/
+/***************************************************************** SHOP(GRID/LIST) ENDS **********************************************************/
+/*************************************************************************************************************************************************/
+
+
+
+/*************************************************************************************************************************************************/
+/***************************************************************** SHOP(DETAILS) STARTS **********************************************************/
+/*************************************************************************************************************************************************/
+
+body.dark-mode #productDetail .sliderArrowRight,
+body.dark-mode #productDetail .sliderArrowLeft {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+body.dark-mode #productDetail .container .productInfoSection h2 {
+    color: #FFC93C;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .ratingSection a {
+    border-left: 1px solid #E4E4E4;
+    color: #e0e0e0;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .ratingSection .averageRating {
+    color: #E4E4E4;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .ratingSection .starRating {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #productDetail .container .productInfoSection .ratingSection a {
+    color: #E4E4E4;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .price {
+    color: #ffffff;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .price del {
+    color: #cccccc;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .productDescription {
+    border-bottom: 1px solid #E4E4E4;
+    color: #e0e0e0;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .productAttributes {
+    color: #e0e0e0;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .productAttributes label,
+body.dark-mode #productDetail .container .productInfoSection .productAttributes option,
+body.dark-mode #productDetail .container .productInfoSection .productAttributes select {
+    color: #e0e0e0;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .actionButtons .quantitySelector {
+    color: #ffffff;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .actionButtons .quantitySelector label {
+    color: #ffffff;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .actionButtons .quantitySelector button {
+    background: #e0e0e0;
+    color: black;
+    border: 1px solid #555555;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .actionButtons .quantitySelector .quantityValue {
+    border: 1px solid #555555;
+    color: black;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .actionButtons .iconButton {
+    background-color: #0a3d62;
+    color: #ffffff;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .productMeta .metaDetails span {
+    color: #FFC93C;
+}
+
+body.dark-mode #productDetail .container .productInfoSection .productMeta .metaDetails span a {
+    color: #E4E4E4;
+}
+
+.dark-mode .accordion-item {
+    background-color: #1f1f1f;
+    color: #ccc;
+    border: 1px solid #444;
+}
+
+.dark-mode .accordion-button {
+    background-color: #333;
+    color: #eee;
+}
+
+/* ProductmoreDetails Section */
+body.dark-mode .ProductmoreDetails .nav-tabs-custom .nav-link {
+    color: #ffffff;
+    background: #333333;
+}
+
+body.dark-mode .ProductmoreDetails .nav-tabs-custom .nav-link.active {
+    background: var(--1st-primary-color);
+}
+
+body.dark-mode .ProductmoreDetails .DescriptionContent {
+    color: #E4E4E4;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewItem {
+    border-bottom: 1px solid #555555;
+    color: #e0e0e0;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewAvatar img {
+    border: 2px solid #FFFFFF;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewContent {
+    color: #e0e0e0;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewContent h4 {
+    color: #FFC93C;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewContent span {
+    color: #cccccc;
+}
+
+body.dark-mode .ProductmoreDetails .ReviewContent p {
+    color: #E4E4E4;
+}
+
+body.dark-mode .ProductmoreDetails .view .prev-btn,
+body.dark-mode .ProductmoreDetails .view .next-btn {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode .ProductmoreDetails .view .num {
+    color: #cccccc;
+}
+
+body.dark-mode .ProductmoreDetails .AdditionalInfoCards .AdditionalInfoCard {
+    background-color: #2C2C2C;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .ProductmoreDetails .AdditionalInfoCards .AdditionalInfoCard h5 {
+    color: #ffffff;
+}
+
+body.dark-mode .ProductmoreDetails .AdditionalInfoCards .AdditionalInfoCard p {
+    color: #cccccc;
+}
+
+/* Related Product Section */
+body.dark-mode .Heading {
+    color: #E0E0E0;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart {
+    background-color: #2C2C2C;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .cartItem {
+    background-color: #2F4F4F;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .cartItem .label {
+    background-color: var(--1st-primary-color);
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .cartItem .label span {
+    color: #ffffff;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .productDetails {
+    color: #e0e0e0;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .productDetails h4 {
+    color: #FFC93C;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .productDetails p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #relatedProduct .container .productWrapper .productSlider .productCart .productDetails span i {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #relatedProduct .right,
+body.dark-mode #relatedProduct .left {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/*************************************************************************************************************************************************/
+/***************************************************************** SHOP(DETAILS) ENDS ************************************************************/
+/*************************************************************************************************************************************************/
+
+
+
+/************************************************************************************************************************************************/
+/**************************************************************** ABOUT US STARTS ***************************************************************/
+/************************************************************************************************************************************************/
+body.dark-mode #aboutShop .aboutshopContent {
+    background-image: url(../img/about\ shop\ bg\ dark.png);
+}
+
+body.dark-mode #aboutShop .aboutshopContent .aboutshopIntro h2 {
+    color: #E0E0E0;
+}
+
+body.dark-mode #aboutShop .aboutshopContent .aboutshopIntro p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #aboutShop .aboutshopContent .aboutshopCheak ul li {
+    color: #E4E4E4;
+}
+
+/******************************************************************** SHOP GROWTH ************************************************************* */
+body.dark-mode #shopGrowth .shopgrowthContent span {
+    background-color: #a4b0be;
+    color: #FF6F61;
+}
+
+body.dark-mode #shopGrowth .shopgrowthContent span:hover {
+    background-color: #FF6F61;
+    color: #FFFFFF;
+}
+
+body.dark-mode #shopGrowth .shopgrowthContent h4 {
+    color: #FF6F61;
+}
+
+body.dark-mode #shopGrowth .shopgrowthContent p {
+    color: #E4E4E4;
+}
+
+/* ****************************************************************** OUR STORY *************************************************************** */
+
+body.dark-mode #ourStory {
+    background: #2F3640;
+}
+
+body.dark-mode #ourStory .video .overlay a {
+    background-color: #E8E8E8;
+    color: #FF9389;
+}
+
+
+body.dark-mode #ourStory .content h3 {
+    color: #E0E0E0;
+}
+
+body.dark-mode #ourStory .content h6 {
+    color: #E4E4E4;
+}
+
+/* ********************************************************************* ADVANTAGE ************************************************************ */
+body.dark-mode #advantage .advantageContent .details h4 {
+    color: #FFFFFF;
+}
+
+body.dark-mode #advantage .advantageContent .details p {
+    color: #E4E4E4;
+}
+
+/* ******************************************************************** EXPERT TEAM *********************************************************** */
+body.dark-mode #expartTeam .heading h1 {
+    color: #E0E0E0;
+}
+
+body.dark-mode #expartTeam .teamSlide {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #expartTeam .teamSlide .details h5 {
+    color: #FFC93C;
+}
+
+body.dark-mode #expartTeam .teamSlide .details p {
+    color: #FF6F61;
+}
+
+body.dark-mode #expartTeam .teamSlide .details .socialIcons a {
+    color: #FFFFFF;
+}
+
+body.dark-mode #expartTeam .teamSlide .details .socialIcons a:hover {
+    color: #FF6F61;
+}
+
+body.dark-mode #expartTeam .arrows span {
+    background-color: #576574;
+    color: #FFFFFF;
+    border-color: #FF6F61;
+}
+
+body.dark-mode #expartTeam .arrows span:hover {
+    background-color: #FF6F61;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+/* ********************************************************************** INSTAGRAM *********************************************************** */
+body.dark-mode #instagram .heading h1 {
+    color: #E0E0E0;
+}
+
+body.dark-mode #instagram .news_slider_dots li.slick-active button {
+    background: #FF6F61;
+}
+
+/************************************************************************************************************************************************/
+/**************************************************************** ABOUT US ENDS *****************************************************************/
+/************************************************************************************************************************************************/
+
+
+/*************************************************************************************************************************************************/
+/********************************************************************* BLOG STARTS ***************************************************************/
+/*************************************************************************************************************************************************/
+body.dark-mode #BlogPost .postCard {
+    background: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+body.dark-mode #BlogPost .postDate {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+body.dark-mode #BlogPost .postDate a {
+    color: #c5c6c7;
+}
+
+body.dark-mode #BlogPost .postTitle a {
+    color: #FFC93C !important;
+}
+
+body.dark-mode #BlogPost .postTitle a:hover {
+    color: var(--1st-primary-color) !important;
+}
+
+body.dark-mode #BlogPost .postContent p,
+body.dark-mode #BlogPost .postContent a {
+    color: #E4E4E4;
+}
+
+body.dark-mode #BlogPost .postContent a:hover {
+    color: var(--1st-primary-color);
+}
+
+body.dark-mode #BlogPost .progressInfo {
+    color: #E4E4E4;
+}
+
+body.dark-mode #BlogPost .progressInfo .progress {
+    background-color: #FFFFFF;
+}
+
+body.dark-mode #BlogPost .progress-bar {
+    background-color: var(--1st-primary-color);
+}
+
+body.dark-mode .paginationWrapper a {
+    color: #b3b3b3;
+}
+
+body.dark-mode .paginationWrapper a.num {
+    border: 1px solid #b3b3b3;
+}
+
+body.dark-mode .paginationWrapper a.num:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+body.dark-mode .paginationWrapper .prev-btn,
+body.dark-mode .paginationWrapper .next-btn {
+    color: var(--1st-primary-color);
+}
+
+/*************************************************************************************************************************************************/
+/********************************************************************** BLOGS ENDS ***************************************************************/
+/*************************************************************************************************************************************************/
+
+
+
+
+/************************************************************************************************************************************************/
+/************************************************************** CONTACT US STARTS ***************************************************************/
+/************************************************************************************************************************************************/
+body.dark-mode #contactCart .container .cart .contactCart {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #contactCart .container .cart .contactCart .contactInfo h2,
+body.dark-mode #contactCart .container .cart .contactCart .contactInfo h5 {
+    color: #FFC93C;
+}
+
+body.dark-mode #contactCart .container .cart .contactCart .contactInfo p {
+    color: #E4E4E4;
+}
+
+body.dark-mode #contactCart .container .cart .contactCart .contactInfo a {
+    color: #E4E4E4;
+}
+
+body.dark-mode #contactCart .container .cart .contactCart .contactInfo a:hover {
+    color: var(--1st-primary-color);
+}
+
+/* Dark Mode for Contact Form */
+body.dark-mode .GetInTouch {
+    background-color: #0A0A0A;
+}
+
+body.dark-mode .GetInTouch h2 {
+    color: #E0E0E0;
+}
+
+body.dark-mode .GetInTouch input,
+body.dark-mode .GetInTouch textarea {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+
+body.dark-mode .gettext {
+    background-color: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .GetInTouch a.btn,
+body.dark-mode .GetInTouch button.btn {
+    background-color: var(--1st-primary-color);
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+}
+
+/*************************************************************************************************************************************************/
+/***************************************************************** CONTACT US ENDS ***************************************************************/
+/*************************************************************************************************************************************************/
+
+
+
+/*************************************************************************************************************************************************/
+/******************************************************************** SOIKAT DEV *****************************************************************/
+/*************************************************************************************************************************************************/

@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor</title>
+  <link rel="icon" href="./Assets/img/Favicon Logo.png" type="image/png">
+  <!-- CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/slick.css">
+  <link rel="stylesheet" href="./Assets/CSS/all.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/venobox.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/darkmode.css">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+  <!------------------------------------------------------------- HEADER START ---------------------------------------------------------------->
+
+  <!-------------------------------------------------------------- NAV STARTS ----------------------------------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./Assets/img/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Shop<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="shopgrid.html">Shop Items</a>
+                <a href="shopdetails.html">Shop Details</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Pages<span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="about us.html">About Us</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Features <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="pagenotfound.html">Gift Card</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" aria-current="page" href="#">Blogs <span>
+                  <i class="fa-solid fa-chevron-down"></i></span></a>
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <a href="blogs.html">Blogs</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="#" class="m-0 searchIconDesktop"><img src="./Assets/img/Search Box.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/user.svg" alt=""></a>
+              <a href="#"><img src="./Assets/img/heart.svg" alt=""></a>
+              <a href="#" class="position-relative">
+                <img src="./Assets/img/shopping-bag.svg" alt="">
+                <span class="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Search Bar lg -->
+    <div class="main-search-bar" id="mainSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV SMALL STARTS -->
+    <nav class="d-lg-none navbarSm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2 text-center">
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" class="bar-color">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+          </div>
+          <div class="col-8 text-center px-0 logo">
+            <a href="#"><img src="./Assets/img/Logo.png" alt=""></a>
+          </div>
+          <div class="col-2 px-0">
+            <div class="links">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="#" class="m-0"><img src="./Assets/img/heart.svg" alt=""></a>
+                  <a href="#" class="position-relative m-0 me-1">
+                    <img src="./Assets/img/shopping-bag.svg" alt="">
+                    <span class="cartCount">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAV BOTTOM STARTS -->
+    <div class="navbarBottom d-lg-none">
+      <div class="container">
+        <div class="row">
+          <ul class="d-flex justify-content-between w-100">
+            <li><a href="#"><i class="fa-solid fa-percent"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+          <!-- Search Icon for mobile -->
+          <a href="#" class="searchIcon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAV BOTTOM ENDS -->
+
+    <!-- Search Bar for sm -->
+    <div class="search-bar d-lg-none" id="searchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here...">
+            <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">
+          <img src="./Assets/img/Logo2.png" alt="Logo" class="img-fluid">
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-menu">
+        <nav class="menu">
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Shop<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="shopgrid.html">Shop Items</a></li>
+                <li><a href="shopdetails.html">Shop Details</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Pages<i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="about us.html">About Us</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Features <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="pagenotfound.html">Gift Card</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-between align-items-center">Blogs <i
+                  class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sidebar list-unstyled ms-3">
+                <li><a href="blogs.html">Blogs</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP START -->
+    <div class="backToTop">
+      <button><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+    <!-- BACK TO TOP END -->
+
+
+    <!-- DARK/LIGHT MODE TOGGLE STARTS -->
+    <button id="toggle-mode" class="toggle-btn">
+      <i class="fas fa-moon"></i>
+    </button>
+    <!-- DARK/LIGHT MODE TOGGLE ENDS -->
+
+
+    <!-- SPLASH MODE START -->
+    <div id="logo-splash" class="logo-splash">
+      <div class="circle-animation outer-circle"></div>
+      <div class="circle-animation inner-circle"></div>
+      <img src="./Assets/img/Splash Logo.png" alt="Logo" class="logo">
+    </div>
+    <!-- SPLASH MODE END -->
+
+  </header>
+  <!----------------------------------------- NAV ENDS(back to toggle & dark mode toggle) ----------------------------------------------------->
+
+  <!-------------------------------------------------------- HEADER ENDS ---------------------------------------------------------------------->
+
+
+  <!-------------------------------------------------------- BANNER START --------------------------------------------------------------------->
+  <main>
+    <section class="banner">
+      <!-- Banner Item 1 -->
+      <div class="banner-item" style="background-image: url('./Assets/img/banner\ 2.jpg');">
+        <div class="banner-content">
+          <h6>Mega Sale</h6>
+          <h2>Up To 35% Off</h2>
+          <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+          <a href="#" class="btn">
+            Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner Item 2 -->
+      <div class="banner-item" style="background-image: url('./Assets/img/banner.jpg');">
+        <div class="banner-content">
+          <h6>Mega Sale</h6>
+          <h2>Discover New Deals</h2>
+          <p>Save big on our latest collection.</p>
+          <a href="#" class="btn">
+            Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner Item 3 -->
+      <div class="banner-item" style="background-image: url('./Assets/img/banner\ 3.jpg');">
+        <div class="banner-content">
+          <h6>Mega Sale</h6>
+          <h2>Exclusive Offers</h2>
+          <p>Don’t miss out on limited-time offers.</p>
+          <a href="#" class="btn">
+            Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner Dots -->
+      <div class="banner-dots">
+        <div class="dot active" data-slide="0"></div>
+        <div class="dot" data-slide="1"></div>
+        <div class="dot" data-slide="2"></div>
+      </div>
+    </section>
+    <!---------------------------------------------------- BANNER ENDS ------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------- BEAUTY ITEMS START ------------------------------------------------------------------->
+    <section id="beauty-cream">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 d-flex flex-column justify-content-between">
+            <div class="cream_card position-relative" data-aos="fade-right">
+              <img src="./Assets/img/beauty item.png" alt="" class="img-fluid">
+              <div class="overlay">
+                <h3>Beauty Cream</h3>
+                <a href="#">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+            <div class="cream_card position-relative" data-aos="fade-right">
+              <img src="./Assets/img/beauty item2.png" alt="" class="img-fluid">
+              <div class="overlay">
+                <h3>Facial Spray</h3>
+                <a href="#">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="cream_card position-relative" data-aos="fade-left">
+              <img src="./Assets/img/beauty item3.png" alt="" class="img-fluid">
+              <div class="overlay">
+                <h3>Facial Bar Soap</h3>
+                <a href="#">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------ BEAUTY ITEMS ENDS ----------------------------------------------------------------->
+
+
+
+    <!------------------------------------------------ NEW ARRIVAL PRODUCTS START -------------------------------------------------------------->
+    <section id="newArrival">
+      <div class="container position-relative">
+        <h2 data-aos="flip-left">New Arrivals Products</h2>
+        <div class="productSlide">
+
+          <!--1-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products1.png" alt="">
+              </a>
+              <div class="label">
+                -45%
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$135.85</p>
+              <a href="#">
+                <h4>Vitamin C Cream</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 2-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products2.png" alt="">
+              </a>
+              <div class="label">
+                Sale
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$120.35</p>
+              <a href="#">
+                <h4>Satin Lip Stain</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 3-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products3.png" alt="">
+              </a>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$90.65</p>
+              <a href="#">
+                <h4>Facial Cleanser</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 4-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products4.png" alt="">
+              </a>
+              <div class="label">
+                New
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$180.40</p>
+              <a href="#">
+                <h4>Holographic Polish</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 5-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products5.png" alt="">
+              </a>
+              <div class="label">
+                -50%
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$120.75</p>
+              <a href="#">
+                <h4>LumiLuxe Body Lotion</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 6-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products6.png" alt="">
+              </a>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$130.55</p>
+              <a href="#">
+                <h4>Argan Body Butter</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 7-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products7.png" alt="">
+              </a>
+              <div class="label">
+                New
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$165.65</p>
+              <a href="#">
+                <h4>Foaming Cleanser</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 8-->
+          <div class="product" data-aos="zoom-in" data-aos-duration="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/new arrival products8.png" alt="">
+              </a>
+              <div class="label">
+                Sale
+              </div>
+              <div class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="productContent">
+              <p>$100.65</p>
+              <a href="#">
+                <h4>Revitalizing Toner</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="productLeft" class="leftArrows" data-aos="fade-left" data-aos-duration="500">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div id="productRight" class="rightArrows" data-aos="fade-right" data-aos-duration="500">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------ NEW ARRIVAL PRODUCTS END ---------------------------------------------------------------->
+
+
+
+    <!--------------------------------------------------- SPA COSMETICS START ------------------------------------------------------------------>
+    <section class="SpaCosmetics">
+      <div class="container">
+        <div class="row">
+
+          <div class="content col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <h2 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">Get Up To 35% Off all <br>
+              Best Spa Cosmetics <br>
+              Cream</h2>
+            <p data-aos="fade-in" data-aos-duration="400" data-aos-delay="400">Holistically maximize interoperable
+              action items for effective <br>e-business. Globally impact
+              enterprise-wide niche markets <br>through dynamic.</p>
+            <a href="#" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Shop Now<i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------------- SPA COSMETICS END -------------------------------------------------------------------->
+
+
+
+    <!------------------------------------------------ BEST SELLER PRODUCT START --------------------------------------------------------------->
+    <section class="BestSellProduct">
+      <div class="container">
+        <h2 data-aos="flip-left">Best Seller Products</h2>
+        <div class="row justify-content-between">
+
+          <!-- 1 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="100">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct1.png" alt="">
+              </a>
+              <div class="label">-45%</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$100.65</p>
+              <a href="#">
+                <h4>Pure Radiance Facewash</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="200">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct2.png" alt="">
+              </a>
+              <div class="label">Sale</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$170.55</p>
+              <a href="#">
+                <h4>FreshGlow Cleansing Foam</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct3.png" alt="">
+              </a>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$145.60</p>
+              <a href="#">
+                <h4>Velvet Touch Hydrating Cream</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="400">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct4.png" alt="">
+              </a>
+              <div class="label">New</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$250.85</p>
+              <a href="#">
+                <h4>Crimson Kiss Nail Polish</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="100">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct5.png" alt="">
+              </a>
+              <div class="label">Sale</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$110.45</p>
+              <a href="#">
+                <h4>Velvet Rose Lip Color</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="200">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct6.png" alt="">
+              </a>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$90.45</p>
+              <a href="#">
+                <h4>Vitamin E Healing Hand Cream</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct7.png" alt="">
+              </a>
+              <div class="label">New</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$58.70</p>
+              <a href="#">
+                <h4>PureGuard Hand Sanitizer</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="SellerSlide col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="400">
+            <div class="productImage">
+              <a href="#">
+                <img src="./Assets/img/bestsellerproduct8.png" alt="">
+              </a>
+              <div class="label">New</div>
+              <div style="padding-top: 20px;" class="overlay">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ProductContent">
+              <p>$210.55</p>
+              <a href="#">
+                <h4>HerbalFusion Shampoo</h4>
+              </a>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <a href="#" class="see-all-products">See All Products
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------- BEST SELLER PRODUCT END ---------------------------------------------------------->
+
+    <!------------------------------------------------------------ DEALS START ----------------------------------------------------------------->
+    <section id="dealSlider">
+      <div class="container">
+        <h2 data-aos="flip-left">Deals Of The Days</h2>
+        <div class="wrapper">
+
+          <div class="countdown">
+            <ul>
+              <li><span class="day">27</span>Days</li>
+              <li><span class="hour">16</span>Hour</li>
+              <li><span class="min">13</span>Minute</li>
+              <li><span class="sec">30</span>Sec</li>
+            </ul>
+          </div>
+          <div class="deal_slider">
+            <!-- 1 -->
+            <div class="col-lg-6  wrapper_container">
+              <div class="wrapper_card" style="background-image: url(./Assets/img/deals\ 1.png);">
+                <h3>Fairness Cream</h3>
+                <h1>Get Up To 35% Off</h1>
+                <p>Effectively focus on top-tier value in e-commerce without transparency, and significantly delay
+                  well-established relationships.</p>
+                <h3>$231.40 <span>$356.35</span></h3>
+                <a href="#" class="button">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-lg-6 wrapper_container">
+              <div class="wrapper_card" style="background-image: url(./Assets/img/deals\ 2.png);">
+                <h3>Fairness Cream</h3>
+                <h1>Get Up To 65% Off</h1>
+                <p>Effectively focus on top-tier value in e-commerce without transparency, and significantly delay
+                  well-established relationships.</p>
+                <h3>$124.60 <span>$356.35</span></h3>
+                <a href="#" class="button">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-lg-6 wrapper_container">
+              <div class="wrapper_card" style="background-image: url(./Assets/img/deals\ 3.png);">
+                <h3>Fairness Cream</h3>
+                <h1>Get Up To 25% Off</h1>
+                <p>Effectively focus on top-tier value in e-commerce without transparency, and significantly delay
+                  well-established relationships.</p>
+                <h3>$231.35 <span>$356.35</span></h3>
+                <a href="#" class="button">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------------------------- DEALS END -------------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------- SPECIAL OFFER STARTS ------------------------------------------------------------>
+    <section id="offer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 order-lg-1 order-md-1 order-1 text-start" data-aos="fade-right"
+            data-aos-duration="500">
+            <div class="content">
+              <span>SPECIAL OFFER</span>
+              <h3>Beauty Inspired by Real <br> Shine In Life</h3>
+              <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning
+                paradigms for <br> functional architectures. Professionally aggregate.</p>
+              <a href="#">Explore More<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 order-lg-2 order-md-2 order-2 p-0" data-aos="fade-left"
+            data-aos-duration="500">
+            <div class="video">
+              <div class="overlay">
+                <a href="https://youtu.be/LS_CR7UwhRs?si=5tKjKek03ui73fQv" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <img class="w-100 h-100 d-block" src="./Assets/img/special offer video thumb.png"
+                alt="Special Offer Video">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------------------- SPECIAL OFFER ENDS ------------------------------------------------------------>
+
+
+    <!---------------------------------------------------------- LEATEST NEWS START ------------------------------------------------------------>
+    <section id="news">
+      <div class="container">
+        <div class="heading">
+          <h3 data-aos="flip-left">Latest News</h3>
+        </div>
+        <div class="newsSlider">
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news1.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>Optimal Skincare Routine.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news2.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>Remedies for Dry Scalp.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news3.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>Adventuring Solo Is Exciting.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news4.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>A Splendid Sunday Morning.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news5.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>The air with joyful birdsong.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+          <div class="col-lg-3 newsBox">
+            <div class="picture">
+              <img src="./Assets/img/leatest news6.png" alt="">
+            </div>
+            <div class="newsInfo">
+              <h3>A brand new day awakens.</h3>
+              <p>Confidently dominate year-round markets without flexibility.</p>
+            </div>
+            <div class="readMore">
+              <a class="d-flex align-items-center link" href="#">Read More <i
+                  class="ps-3 fa-solid fa-long-arrow-right"></i></a>
+              <a class="date" href="#">Jan 04, 2022</a>
+            </div>
+          </div>
+        </div>
+        <div class="news_slider_dots_container"></div>
+      </div>
+    </section>
+  </main>
+
+  <!------------------------------------------------------------ LEATEST NEWS END -------------------------------------------------------------->
+
+
+  <!----------------------------------------------------------------- FOOTER ------------------------------------------------------------------->
+  <footer>
+    <div class="container">
+      <div class="overly w-100 d-none d-lg-block">
+        <div class="row gy-3 align-items-center">
+          <!-- Free Shipping -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free shiping.svg" alt="Free Shipping">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE SHIPPING</h4>
+                <p>All orders over <span>$150</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Payment -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/quick payment.svg" alt="Quick Payment">
+              </div>
+              <div class="ctn col-9">
+                <h4>QUICK PAYMENT</h4>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Free Returns -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/free returns.svg" alt="Free Returns">
+              </div>
+              <div class="ctn col-9">
+                <h4>FREE RETURNS</h4>
+                <p>Return money within 30 days</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 24/7 Support -->
+          <div class="col-lg-3 overlyBody">
+            <div class="row align-items-center">
+              <div class="image col-3">
+                <img class="w-100" src="./Assets/img/support.svg" alt="24/7 Support">
+              </div>
+              <div class="ctn col-9">
+                <h4>24/7 SUPPORT</h4>
+                <p>Quick Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footerHeading gy-3 gy-lg-0 justify-content-between align-items-center">
+        <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+          <a href="https://facebook.com/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+          <a href="https://twitter.com/" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+          <a href="https://instagram.com/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+        </div>
+        <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo">
+          <a href="#"><img src="./Assets/img/Logo footer.png" alt="Aytor Logo"></a>
+        </div>
+        <div class="col-lg-4 col-12 order-3 paymentCards">
+          <a href="#">
+            <img src="./Assets/img/pay system.svg" alt="Payment Cards">
+          </a>
+        </div>
+      </div>
+
+      <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+        <div class="col-lg-2 col-12 col-sm-4 myAccount">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+            <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 support">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Customer Service</a></li>
+            <li><a href="contact.html"><span><i class="fa-solid fa-chevron-right"></i></span> Store Locations</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0">
+          <h4>Opening Time</h4>
+          <ul>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Mon-Tue:</p><span class="col-sm-7 col-3">8AM-10PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Wed:</p><span class="col-sm-7 col-3">8AM-7PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Fri:</p><span class="col-sm-7 col-3">7AM-12PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sat:</p><span class="col-sm-7 col-3">9AM-8PM</span>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <p class="col-sm-5 col-3">Sun:</p><span class="col-sm-7 col-3">Closed</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 contactUs">
+          <h4>Contact Us</h4>
+          <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broadway, New York, NY 10003, United States
+          </address>
+          <a href="tel:+8801682024792"><span><i class="fa-solid fa-phone"></i></span> +1 (800) 866-0286</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com"><span><i class="fa-solid fa-envelope"></i></span>
+            aetor.info@gmail.com</a>
+          <a href="mailto:soikat.pciu.cse19@gmail.com">info@aetor.com</a>
+        </div>
+        <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+          <h4>Newsletter</h4>
+          <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+          <form id="subscribeForm" action="#" method="get" onsubmit="return validateEmail()">
+            <div>
+              <input type="email" id="email" placeholder="Enter your email...." required>
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>© 2024 All Rights Reserved <span>🔁 Aytor</span> By <span>Soikat Dev</span>.</p>
+    </div>
+  </footer>
+  <!----------------------------------------------------------- FOOTER ENDS -------------------------------------------------------------------->
+
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------- HOMEPAGE END --------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <!-- JS -->
+  <script src="./Assets/JS/jquery-3.7.1.min.js"></script>
+  <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+  <script src="./Assets/JS/jquery.countdown.min.js"></script>
+  <script src="./Assets/JS/slick.min.js"></script>
+  <script src="./Assets/JS/venobox.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./Assets/JS/app.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      once: false,
+    });
+  </script>
+</body>
+
+</html>
